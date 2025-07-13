@@ -117,9 +117,13 @@ def get_glaucoma_risk(final_cdr):
 
 # ✅ UI
 @app.route('/')
-def home():
-    return render_template("index.html")
+def landing():
+    return render_template("index.html")   # Landing page
 
+@app.route('/detect')
+def home():
+    return render_template("detect.html")  # Glaucoma detection UI
+    
 # ✅ File Upload Handler
 @app.route('/predict', methods=['POST'])
 def predict():

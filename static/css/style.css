@@ -1,0 +1,154 @@
+/* ===== General ===== */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f8faff;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+  color: #111827;
+}
+
+/* ===== Navbar - Modern Glassy ===== */
+.navbar {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.navbar .navbar-brand {
+  font-weight: 700;
+  color: #1d4ed8 !important;
+}
+
+.navbar .nav-link {
+  color: #374151 !important;
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+  color: #1d4ed8 !important;
+}
+
+.navbar .btn-outline-light {
+  background-color: #1d4ed8;
+  color: white;
+  border: none;
+}
+
+.navbar .btn-outline-light:hover {
+  background-color: #2563eb;
+}
+
+/* ===== Hero ===== */
+.header {
+  background: linear-gradient(135deg, #c1dfff, #e0ecff);
+  padding: 100px 0 80px;
+  text-align: center;
+  color: #0f172a;
+}
+
+.header h1 {
+  font-size: 3rem;
+}
+
+.header p {
+  font-size: 1.25rem;
+}
+
+.header .btn {
+  background-color: #2563eb;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 8px;
+}
+
+.header .btn:hover {
+  background-color: #1d4ed8;
+}
+
+
+.header .lead {
+  color: #333333;           /* Light but visible */
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+/* ===== Features ===== */
+#features {
+  background-color: #ffffff;
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+  background-color: #f1f5f9;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.card i {
+  color: #2563eb;
+}
+
+/* ===== Workflow ===== */
+#how-it-works {
+  background-color: #f3f4f6;
+}
+
+#how-it-works h6 {
+  font-weight: 600;
+  color: #111827;
+}
+
+/* ===== Footer ===== */
+.footer-modern {
+  background: linear-gradient(135deg, #1e293b, #2d2a5e);
+  color: #f4f4f4;
+  font-family: 'Inter', sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-modern h5,
+.footer-modern h6 {
+  color: #ffffff;
+}
+
+.footer-modern .footer-link {
+  color: #c5c8d3;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-modern .footer-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-modern .text-light-emphasis {
+  color: #b3b3cc !important;
+}
+
+.footer-modern .social-icons a {
+  color: #ccc;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.footer-modern .social-icons a:hover {
+  color: #6cc5ff;
+  transform: scale(1.1);
+}
+
+.footer-modern hr {
+  border-color: rgba(255, 255, 255, 0.15);
+}
