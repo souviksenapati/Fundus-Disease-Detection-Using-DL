@@ -103,7 +103,7 @@ Access the app in your browser at:
 ## 🚀 Live Demo
 
 Try the app live on Hugging Face Spaces:
-👉 https://huggingface.co/spaces/souviksenapati/Glaucoma-Detection-System
+👉 https://huggingface.co/spaces/souviksenapati/Fundus-Disease-Detection-Using-DL
 
 ---
 
