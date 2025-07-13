@@ -4,7 +4,7 @@
 
 In the field of ophthalmology, early detection of Glaucoma—a leading cause of irreversible blindness—is critical. However, manual examination of fundus images and videos to determine the Cup-to-Disc Ratio (CDR) is time-consuming and prone to human error. To address this challenge, we present an AI-powered solution: **Glaucoma Detection System using YOLOv8 & Flask**. This project leverages the power of Deep Learning to analyze fundus images and videos, accurately compute the CDR, and predict the risk of Glaucoma in real-time. Built with Flask and deployed on Hugging Face Spaces, this user-friendly system aims to assist ophthalmologists and researchers in efficient, automated diagnosis.
 
-<br />
+---
 
 ## Table of Contents
 
@@ -16,7 +16,7 @@ In the field of ophthalmology, early detection of Glaucoma—a leading cause of 
 6. [License](#license)  
 7. [Contact](#contact)
 
-<br />
+---
 
 ## Key Technologies and Skills
 
@@ -29,7 +29,7 @@ In the field of ophthalmology, early detection of Glaucoma—a leading cause of 
 - HTML5 + JavaScript  
 - Hugging Face Spaces
 
-<br />
+---
 
 ## Installation
 
@@ -42,13 +42,16 @@ pip install opencv-python-headless
 pip install numpy
 pip install torch
 pip install pykalman
+```
 
 Note: If you're using a lightweight machine or Hugging Face Space, it's recommended to use opencv-python-headless instead of opencv-python.
-<br />
-Usage
+
+---
+
+## Usage
 
 To use this project, follow these steps:
-
+```
 Clone the repository: git clone https://github.com/souviksenapati/Glaucoma-Detection-System
 
 Navigate to the project folder:
@@ -62,66 +65,63 @@ pip install -r requirements.txt
 Run the Flask app:
 
 python app.py
-
+```
 Access the app in your browser at:
 
     http://127.0.0.1:5000
 
-<br />
-Features
-Fundus Image & Video Analysis:
+---
+## Features
 
-    Accepts input in the form of .jpg, .png (images) or .mp4, .avi (videos).
+### 🖼️ Fundus Image & Video Analysis
+- Accepts input in the form of `.jpg`, `.png` (images) or `.mp4`, `.avi` (videos).
+- Automatically detects **optic disc** and **optic cup** regions using **YOLOv8**.
+- Calculates the **Cup-to-Disc Ratio (CDR)** for each frame (in case of videos).
+- Applies **Kalman Filtering** to smooth predictions across frames.
+- Generates a final **CDR value** and provides a **Glaucoma Risk Diagnosis**:
+  - ✅ **CDR < 0.4** → *Healthy*
+  - ⚠️ **CDR 0.4 - 0.5** → *Risk Detected* (percentage shown)
+  - ❌ **CDR ≥ 0.5** → *Glaucoma Detected*
 
-    Automatically detects optic disc and optic cup regions using YOLOv8.
+---
 
-    Calculates the Cup-to-Disc Ratio (CDR) for each frame (in case of video).
+### 🌐 Web Interface
+- Built using **Flask**, **HTML5**, and **Bootstrap**.
+- Upload form with **loader animation** and **progress bar**.
+- **Dynamic result display** with color-coded health tags.
+- Fully optimized for deployment on **Hugging Face Spaces**.
 
-    Applies Kalman Filtering for smoothing predictions across frames.
+---
 
-    Generates a final CDR and provides a Glaucoma Risk Diagnosis:
+### 🧠 Model
+- Trained on real-world annotated **fundus datasets**.
+- Deployed using **CPU-safe PyTorch + YOLOv8** pipeline.
+- Enhanced with **Kalman Filter** to reduce prediction noise.
 
-        CDR < 0.4 → Healthy
+---
 
-        CDR 0.4 - 0.5 → Risk Detected (percentage shown)
-
-        CDR ≥ 0.5 → Glaucoma Detected
-
-Web Interface:
-
-    Built using Flask + HTML5 + Bootstrap.
-
-    Upload form with loader animation and progress bars.
-
-    Dynamic result display with color-coded tags (Healthy / Risk / Glaucoma).
-
-    Optimized for deployment on Hugging Face Spaces.
-
-Model:
-
-    Trained on real-world annotated fundus datasets.
-
-    Deployed using CPU-safe PyTorch + YOLOv8 pipeline.
-
-    Smoothened using a Kalman Filter to reduce prediction noise in videos.
-
-<br />
-🚀 Live Demo
+## 🚀 Live Demo
 
 Try the app live on Hugging Face Spaces:
 👉 https://huggingface.co/spaces/souviksenapati/Glaucoma-Detection-System
-<br />
-Contributing
+
+---
+
+## Contributing
 
 Contributions are welcome!
 Feel free to fork the repository, suggest enhancements, open issues, or submit pull requests. Whether it's code optimization, UI improvement, or feature ideas — all help is appreciated!
-<br />
-License
+
+---
+
+## License
 
 This project is licensed under the MIT License.
 See the LICENSE file for more information.
-<br />
-Contact
+
+---
+
+## Contact
 
 📧 Email: souviksenapati85@gmail.com
 
